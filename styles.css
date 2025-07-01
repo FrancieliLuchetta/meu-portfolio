@@ -282,12 +282,34 @@ footer {
   }
 }
 
+.sobre-flex {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
+
 .sobre-img img {
-  width: 130px; /* ou 120px, ajuste ao seu gosto */
+  width: 130px;
   margin: 0 auto 10px auto;
   display: block;
   border-radius: 18px;
   box-shadow: 0 2px 10px #e879f955;
   background: #fff;
   filter: brightness(0.92) grayscale(0.10) blur(0.2px) opacity(0.95);
+}
+.sobre-texto {
+  flex: 1;
+  min-width: 200px;
+}
+@media (max-width: 700px) {
+  .sobre-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+  }
+  .sobre-img img {
+    width: 85px;
+  }
 }
