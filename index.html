@@ -4,27 +4,76 @@
   <meta charset="UTF-8">
   <title>Portfólio de Francieli Luchetta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- seu CSS principal continua valendo -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- ================== SEO / Social (novo) ================== -->
+  <meta name="description" content="Portfólio de Francieli Luchetta — Back-end .NET, SQL, APIs com qualidade, segurança e observability.">
+  <link rel="canonical" href="https://francieliluchetta.github.io/meu-portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Francieli Luchetta — Back-end .NET & SQL">
+  <meta property="og:description" content="APIs escaláveis, testes, Swagger e deploy em nuvem.">
+  <meta property="og:url" content="https://francieliluchetta.github.io/meu-portfolio/">
+  <meta property="og:image" content="https://francieliluchetta.github.io/meu-portfolio/images/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Francieli Luchetta",
+    "url":"https://francieliluchetta.github.io/meu-portfolio/",
+    "sameAs":[
+      "https://github.com/francieliluchetta",
+      "https://www.linkedin.com/in/francieli-luchetta-71b554101"
+    ],
+    "jobTitle": "Desenvolvedora Back-end .NET"
+  }
+  </script>
+
+  <!-- ================== CSS mínimo só do HERO (novo) ================== -->
+  <style>
+    :root { --fl-bg:#0f172a; --fl-fg:#e2e8f0; --fl-muted:#94a3b8; --fl-brand:#22d3ee; }
+    .fl-skip{position:absolute;left:-9999px}
+    .fl-skip:focus{left:12px;top:12px;background:#fff;color:#000;padding:8px;border-radius:8px;z-index:10}
+
+    .fl-hero{background:var(--fl-bg);color:var(--fl-fg);padding:72px 20px 48px;border-bottom:1px solid #233}
+    .fl-hero .fl-wrap{max-width:980px;margin:auto}
+    .fl-hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 10px}
+    .fl-hero p{color:var(--fl-muted);margin:0 0 20px;font-size:18px}
+
+    .fl-btn{display:inline-block;padding:10px 16px;border-radius:12px;text-decoration:none;border:1px solid #334155;transition:.2s;line-height:1}
+    .fl-btn-primary{background:var(--fl-brand);color:#0b1220;border-color:transparent}
+    .fl-btn-primary:hover{transform:translateY(-1px)}
+    .fl-btn-ghost{color:var(--fl-fg);margin-left:8px}
+    .fl-btn-ghost:hover{background:#111827}
+  </style>
 </head>
 <body>
 
-  <header>
-    <div class="container">
+  <!-- =============== HERO novo =============== -->
+  <header class="fl-hero">
+    <a href="#projetos" class="fl-skip">Pular para projetos</a>
+    <div class="fl-wrap">
       <h1>Francieli Luchetta</h1>
-      <p>Desenvolvedora | Freelancer | Técnica em Desenvolvimento de Sistemas</p>
-      <nav class="redes">
-        <a href="https://github.com/FrancieliLuchetta" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/francieli-luchetta-71b554101" target="_blank">LinkedIn</a>
-        <a href="https://wa.me/5513997593733" target="_blank">WhatsApp</a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=flmultitec@gmail.com" target="_blank">Gmail</a>
-      </nav>
+      <p>Back-end • .NET • SQL • APIs escaláveis, seguras e bem documentadas.</p>
+      <div class="fl-cta">
+        <a href="#projetos" class="fl-btn fl-btn-primary">Ver projetos</a>
+        <a href="https://github.com/FrancieliLuchetta" class="fl-btn fl-btn-ghost" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/francieli-luchetta-71b554101" class="fl-btn fl-btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://wa.me/5513997593733" class="fl-btn fl-btn-ghost" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:flmultitec@gmail.com" class="fl-btn fl-btn-ghost">Gmail</a>
+      </div>
     </div>
   </header>
 
   <!-- MENU PRINCIPAL -->
   <nav id="menu">
     <ul>
-      <li><a href="#sobre">Sobre</a></li>
+      <!-- trocado: Sobre -> Contato -->
+      <li><a href="#contato">Contato</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#projetos">Projetos</a></li>
@@ -33,44 +82,8 @@
   </nav>
 
   <main>
-    <section id="sobre" class="card sobre-flex">
-  <div class="sobre-img">
-    <img src="images/topo-francieli.png" alt="Francieli Luchetta desenvolvedora" />
-  </div>
-  <div class="sobre-texto">
-    <h2>Sobre Mim</h2>
-    <p>
-      Com uma base sólida em educação e uma transição estratégica para a área de tecnologia, construí minha trajetória unindo formação acadêmica, técnica e prática. Sou formada em <strong>Pedagogia</strong> e <strong>Matemática</strong>, e atualmente curso:
-    </p>
-    <ul>
-      <li>🎓 <strong>Engenharia de Computação</strong> – UNIVESP</li>
-      <li>💻 <strong>Técnico em Desenvolvimento de Sistemas</strong> – SENAI</li>
-      <li>🔧 <strong>Bacharelado em Tecnologia da Informação – Ênfase em Internet das Coisas</strong></li>
-    </ul>
-    <p>
-      Tenho experiência prática em <strong>desenvolvimento front-end</strong>, <strong>automação de tarefas</strong>, <strong>análise de dados</strong> e <strong>criação de soluções digitais</strong>, utilizando tecnologias como <strong>HTML, CSS, JavaScript, Power BI, Firebase e .NET</strong>. Desenvolvo projetos autorais com foco em <strong>usabilidade, organização e aplicabilidade real</strong>, publicados no GitHub.
-    </p>
-    <p>
-      Minha formação inclui cursos certificados em:
-    </p>
-    <ul>
-      <li>💡 <strong>Microsoft AI-900</strong> - Inteligência Artificial em Nuvem</li>
-      <li>☁️ <strong>Google Cloud Foundations</strong> - Serviços e infraestrutura em nuvem</li>
-      <li>📊 <strong>Power BI</strong> - Dashboards e relatórios interativos</li>
-      <li>💼 <strong>Pacote Office</strong> - Word, Excel e PowerPoint com produtividade avançada</li>
-    </ul>
-    <p>
-      Estou em busca da minha <strong>primeira oportunidade profissional na área de tecnologia</strong>, com disponibilidade para atuar em modelo <strong>remoto, híbrido ou presencial</strong>. Tenho dedicação, organização, ótima comunicação e estou pronta para agregar valor a projetos reais.
-    </p>
-    <p class="cta">
-      🔗 <strong>Confira meus projetos e entre em contato para uma possível parceria!</strong>
-    </p>
-    <p>
-      Tenho experiência prática com desenvolvimento de sistemas, front-end, Power BI e automação de tarefas. Atuo como freelancer e estou sempre pronta para novos desafios!
-    </p>
-  </div>
-</section>
-  
+    <!-- seção SOBRE removida por estratégia (herói + projetos/skills) -->
+
     <section id="servicos" class="card">
       <h2>Serviços Contratáveis</h2>
       <div class="cards-servicos">
@@ -166,6 +179,18 @@
         </figure>
       </div>
     </section>
+
+    <!-- ======= NOVA SEÇÃO CONTATO ======= -->
+    <section id="contato" class="card">
+      <h2>Contato</h2>
+      <p>Fico feliz em conversar sobre vagas, freelas e projetos.</p>
+      <div class="cards-servicos" style="gap:12px;display:flex;flex-wrap:wrap">
+        <a class="btn" href="mailto:flmultitec@gmail.com">📧 flmultitec@gmail.com</a>
+        <a class="btn" href="https://wa.me/5513997593733" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/in/francieli-luchetta-71b554101" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a class="btn" href="https://github.com/FrancieliLuchetta" target="_blank" rel="noopener">💻 GitHub</a>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -174,6 +199,7 @@
     </p>
   </footer>
 
+  <!-- seu JS continua -->
   <script src="app.js"></script>
 </body>
 </html>
